@@ -1,7 +1,14 @@
+import { Toaster } from "react-hot-toast";
 import SearchBox from "../components/SearchBox";
+import ToastDemo from "../components/ToastDemo";
 
 const PlaygroundPage = () => {
-  return <SearchBox onChange={(text) => console.log(text)} />
+  return (
+    <>
+      <ToastDemo />
+      <Toaster />
+    </>
+  );
 };
 
 export default PlaygroundPage;
