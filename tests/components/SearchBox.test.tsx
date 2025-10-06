@@ -20,6 +20,7 @@ describe("SearchBox", () => {
   });
 
   it.skip("should call onChange when Enter is pressed", async () => {
+    vi.spyOn(console, 'warn');
     const { inputElement, onChange } = renderSearchbox();
     const user = userEvent.setup();
     const searchTerm = "SearchTerm";
