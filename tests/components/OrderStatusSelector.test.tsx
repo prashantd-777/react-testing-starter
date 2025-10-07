@@ -67,8 +67,8 @@ describe("OrderStatusSelector", () => {
     await user.click(trigger);
 
     const newOption = await getOption(/new/i);
-     user.click(newOption);
+    await user.click(newOption);
 
-    expect(onChange).toHaveBeenCalledWith('new')
+    expect(onChange).toHaveBeenCalledWith("new");
   });
 });
